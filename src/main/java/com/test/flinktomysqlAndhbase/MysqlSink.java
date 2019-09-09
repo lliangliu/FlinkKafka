@@ -1,5 +1,6 @@
 package com.test.flinktomysqlAndhbase;
 
+import com.test.Utils.PropertyUtil;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.sink.RichSinkFunction;
 import java.sql.Connection;
@@ -10,12 +11,12 @@ import java.sql.PreparedStatement;
  *自定义mysqlsink
  */
 public class MysqlSink extends RichSinkFunction<Entity> {
+    private static final String driver = PropertyUtil.getProperty("mysql.connect.driver");
+    private static final String url = PropertyUtil.getProperty("mysql.connect.url");
+    private static final String username  = PropertyUtil.getProperty("mysql.connect.username");
+    private static final String password = PropertyUtil.getProperty("mysql.connect.password");
     private PreparedStatement ps=null;
     private Connection connection=null;
-    String driver = "com.mysql.jdbc.Driver";
-    String url = "jdbc:mysql://192.168.65.20:3306/flinktest?useUnicode=true&characterEncoding=UTF-8&useSSL=false";
-    String username  = "root";
-    String password = "123456";
 
     /**
      * open()方法建立连接

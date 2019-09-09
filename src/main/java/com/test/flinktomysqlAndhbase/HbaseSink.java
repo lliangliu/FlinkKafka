@@ -1,5 +1,6 @@
 package com.test.flinktomysqlAndhbase;
 
+import com.test.Utils.PropertyUtil;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.sink.RichSinkFunction;
 
@@ -19,12 +20,13 @@ import java.util.List;
 
 public class HbaseSink extends RichSinkFunction<Entity> {
     private static final Logger logger = LoggerFactory.getLogger(HbaseSink.class);
+    private static final String zkServer = PropertyUtil.getProperty("hbase.zookeeper.quorum");
+    private static final String port = PropertyUtil.getProperty("hbase.zookeeper.property.clientPort");
+    private static final String cf = PropertyUtil.getProperty("hbase.columnfamily");
+    private static final String TABLE_NAME= PropertyUtil.getProperty("hbase.tablename");
+    private static TableName tableName = TableName.valueOf(TABLE_NAME);
     private Connection conn = null;
     private Table table = null;
-    private static String zkServer = "node01,node02,node03";
-    private static String port = "2181";
-    private static  String cf = "info";
-    private static TableName tableName = TableName.valueOf("hbaseflink");
 
 
     @Override
@@ -48,7 +50,13 @@ public class HbaseSink extends RichSinkFunction<Entity> {
         put.addColumn(Bytes.toBytes(cf),Bytes.toBytes("os"),Bytes.toBytes(value.os));
         put.addColumn(Bytes.toBytes(cf),Bytes.toBytes("phoneName"),Bytes.toBytes(value.phoneName));
         list.add(put);
-        table.put(list);
+        if(list.size()%100==0){
+            table.put(list);
+        }
+        if (list.size()>0){
+            table.put(list);
+        }
+
     }
 
     @Override
