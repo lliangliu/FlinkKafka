@@ -12,7 +12,7 @@ public class FlinkSubmitter {
     private static String kafkaservers=PropertyUtil.getProperty("kafka.bootstrap.servers");
     private static String keydeserializer=PropertyUtil.getProperty("kafka.key.serializer");
     private static String valuedeserializer=PropertyUtil.getProperty("kafka.value.serializer");
-    private static String topicName=PropertyUtil.getProperty("kafka_flink_mysql");
+    private static String topicName=PropertyUtil.getProperty("kafka.topic.name");
     public static void main(String[] args) throws Exception{
         //获取运行时环境
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
