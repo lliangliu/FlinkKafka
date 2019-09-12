@@ -1,20 +1,20 @@
 package com.redisDemo;
-
-import org.junit.Before;
-import org.junit.Test;
 import redis.clients.jedis.Jedis;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class FiveRedisType {
-    private static Jedis jedis;
-    @Before
-    public void before(){
-        jedis=null;
+    private Jedis jedis;
+
+    /**
+     * 连接redis服务器
+     */
+    public void connectRedis() {
+        jedis=RedisUtil.getJedis();
     }
 
-    @Test
+
     public void testString(){
         //设置键 获取键 get set
         jedis.set("steve","stevetao");
@@ -45,7 +45,7 @@ public class FiveRedisType {
 
     }
     //List类型
-    @Test
+
     public void testList(){
         //尾添加 rpush 头添加 lpush
         jedis.lpush("books","java","C++","Ruby","Scala","python");
@@ -71,7 +71,7 @@ public class FiveRedisType {
     }
 
     //Hash类型
-    @Test
+
     public void testHash(){
         //适合字段:设置hset 取值hget(如果value 是json字符串,类似保存对象)
         jedis.hset("student","name","zhangsan");
@@ -104,7 +104,6 @@ public class FiveRedisType {
 
     }
     //Set类型
-    @Test
     public void testSet(){
     //set中添加sadd 取值smembers
         jedis.sadd("student","Jan","John","Steve","jack","lili","peter","Anna");
@@ -134,7 +133,7 @@ public class FiveRedisType {
 
     }
     //ZSet类型
-    @Test
+
     public void testZset(){
         jedis.zadd("math",75,"Jim");
         jedis.zadd("math",86,"Lina");
@@ -144,6 +143,15 @@ public class FiveRedisType {
         System.out.println("有序集合的成员:"+jedis.zrevrangeByScore("math",100,0));
         //返回set<Tuple>
         System.out.println("有序集合的成员:"+jedis.zrangeWithScores("math",0,100));
+    }
+    /**
+     * redis连接池
+     */
+
+    public static void main(String[] args) {
+    FiveRedisType ft=new FiveRedisType();
+    ft.connectRedis();
+    ft.testString();
     }
 
 }

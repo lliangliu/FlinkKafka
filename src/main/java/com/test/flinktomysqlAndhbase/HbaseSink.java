@@ -35,7 +35,7 @@ public class HbaseSink extends RichSinkFunction<Entity> {
         org.apache.hadoop.conf.Configuration config = HBaseConfiguration.create();
         config.set("hbase.zookeeper.quorum", zkServer);
         config.set("hbase.zookeeper.property.clientPort", port);
-        config.set("zookeeper.znode.parent","/hbase/master");
+        //config.set("zookeeper.znode.parent","/hbase/master");
         conn= ConnectionFactory.createConnection(config);
         table = conn.getTable(tableName);
     }

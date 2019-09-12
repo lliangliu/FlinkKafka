@@ -11,7 +11,7 @@ import java.util.Properties;
  */
 public class KafkaCreateData {
     public static String topic = "kafka_flink_mysql";
-    public static String brokerList = "node01:9092";
+    public static String brokerList = "node01:9092,node02:9092,node03:9092";
     public static void createDate(){
         Entity entity = new Entity();
         Properties props = new Properties();

@@ -43,11 +43,11 @@ public class CreateDataToKafka {
             StringBuffer sb=new StringBuffer();
             String res = sb.append(i).append(",").append(phoneName).append(",").append(os).append(",").append(city).append(",").append(loginTime).toString();
             //flink 模块中scala.example.streaming.kafka.StreamingWindowWatermarkScala.scala 中的ti输入源
-            ProducerRecord<String, String> record = new ProducerRecord<>("flinktest", res);
+            ProducerRecord<String, String> record = new ProducerRecord<>("kafka_flink_redis", res);
             //kafka-console-consumer.sh --bootstrap-server node01:9092,node02:9092,node03:9092 --topic flink_test
             // 只管发送消息，不管是否发送成功
             producer.send(record);
-            //Thread.sleep(300);
+            Thread.sleep(300);
         }
 
     }

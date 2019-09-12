@@ -45,21 +45,23 @@ public class flinkKafkaWordCount {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         env.enableCheckpointing(1000);
         Properties properties = new Properties();
-        properties.setProperty("bootstrap.servers","node1:9092,node2:9092,node3:9092");
-        properties.setProperty("zookeeper.connect", "node1:2181,node2:2181,node3:2181");
-        properties.setProperty("group.id","kafka05");
+        properties.setProperty("bootstrap.servers","node01:9092,node02:9092,node03:9092");
+        properties.setProperty("zookeeper.connect", "node01:2181,node02:2181,node03:2181");
+        properties.setProperty("group.id","kafka08");
         properties.setProperty("auto.offset.reset","earliest");
         DataStream<String> stream = env.addSource(new FlinkKafkaConsumer010<>(
-                "pt_data", new SimpleStringSchema(), properties) );
+                "kafka_flink_redis", new SimpleStringSchema(), properties) );
         DataStream<Tuple2<String, Integer>> counts = stream.flatMap(new linesFilter())
                  .keyBy(0)
                  //.window(TumblingProcessingTimeWindows.of(Time.seconds(10))) ////指定计算数据的窗口大小和滑动窗口大小
                  .sum(1);
+        counts.print();
     //实例化Flink和Redis 关联类FlinkJedisPoolConfig,设置Redis端口
         FlinkJedisPoolConfig conf=new FlinkJedisPoolConfig.Builder()
-                .setHost("node3").build();
+                .setHost("192.168.65.20").setPort(6379).build();
         //实例化RedisSink,并通过flink的addSink的方式将flink计算的结果插入到redis中
         counts.addSink(new RedisSink<Tuple2<String, Integer>>(conf,new RedisExampleMapper()));
+        System.out.println("持久化到redis中成功");
 //        sum.print();
 //        sum.writeAsText("D:/test/kafka", FileSystem.WriteMode.OVERWRITE);
         try {

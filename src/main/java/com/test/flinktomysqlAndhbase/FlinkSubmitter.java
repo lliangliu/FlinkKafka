@@ -20,6 +20,8 @@ public class FlinkSubmitter {
         Properties props = new Properties();
         props.put("bootstrap.servers", kafkaservers);
         props.put("zookeeper.connect",zkconnect);
+        props.setProperty("group.id", "kafka11");
+        props.setProperty("auto.offset.reset", "earliest");
         props.put("key.deserializer", keydeserializer);  //key 反序列化
         props.put("value.deserializer",valuedeserializer ); //value 反序列化
         //这里我们使用的是011版本，011 与 09 或者10 的区别在于，011支持Exactly-once语义
@@ -27,12 +29,14 @@ public class FlinkSubmitter {
                 topicName,
                 new SimpleStringSchema(),//String 序列
                 props)).map(string -> JSON.parseObject(string, Entity.class)).setParallelism(1);
+        StreamRecord.print();
         //写入本地
         //StreamRecord.writeAsText("D:/flink");
         //写入Mysql
-        //StreamRecord.addSink(new MysqlSink());
+        StreamRecord.addSink(new MysqlSink());
         //写入hbase
-        StreamRecord.addSink(new HbaseSink());
+        //StreamRecord.addSink(new HbaseSink());
+        //写入redis中
         env.execute("KafkatoMysql");
 
     }
