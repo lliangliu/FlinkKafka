@@ -14,8 +14,8 @@ object JoinDoubleStream {
       val env = StreamExecutionEnvironment.getExecutionEnvironment
       env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
       //获取接口传送的数据
-      val dataStream1 = env.readTextFile("D:/data1.txt")
-      val dataStream2 = env.readTextFile("D:/data2.txt")
+      val dataStream1 = env.readTextFile("C:/TestData/Stream01.txt")
+      val dataStream2 = env.readTextFile("C:/TestData/Stream02.txt")
       val format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS")
       //使用样例类StockTransaction封装获取的数据
       val dataStreamMap1 = dataStream1.map(f => {
@@ -41,7 +41,6 @@ object JoinDoubleStream {
         .window(TumblingEventTimeWindows.of(Time.seconds(3)))
       val innerJoinStream = joinStream.apply(new InnerJoinFunction)
       innerJoinStream.name("innerJoin").print()
-      print("===================== end =========================")
       env.execute("join demo")
     }
   case class StockTransaction(tx_time:String, tx_code:String,tx_value:Double)
