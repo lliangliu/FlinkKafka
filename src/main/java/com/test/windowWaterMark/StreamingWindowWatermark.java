@@ -32,7 +32,7 @@ import java.util.List;
 public class StreamingWindowWatermark {
     public static void main(String[] args)throws Exception {
         //定义主机号
-        String host = "node1";
+        String host = "node01";
         //定义socket的端口号
         int port = 4000;
         //定义分割符
@@ -88,13 +88,14 @@ public class StreamingWindowWatermark {
                 return timestamp;
             }
         });
+        //侧输出
         OutputTag<Tuple2<String,Long>> outputTag=new OutputTag<Tuple2<String,Long>>("late-data"){};
         //分组 聚合
        // DataStream<String> window = waterMarkStream.keyBy(0) todo 修改侧输出
         SingleOutputStreamOperator<String> window = waterMarkStream.keyBy(0)
                 .window(TumblingEventTimeWindows.of(Time.seconds(3)))//按照消息的EventTime分配窗口,和调用TimeWindow效果一样
                 //.allowedLateness(Time.seconds(2)) //todo 允许数据迟到2s
-                //.sideOutputLateData(outputTag) //todo 侧输出
+                .sideOutputLateData(outputTag) //todo 侧输出
                 .apply(new WindowFunction<Tuple2<String, Long>, String, Tuple, TimeWindow>() {
                     @Override
                     public void apply(Tuple tuple, TimeWindow timeWindow, Iterable<Tuple2<String, Long>> input, Collector<String> out) throws Exception {
@@ -109,12 +110,12 @@ public class StreamingWindowWatermark {
                         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
                         StringBuffer sb = new StringBuffer();
                         String separator = ",";
-                        sb.append(key).append(separator)
-                                .append(list.size()).append(separator)
-                                .append(sdf.format(list.get(0))).append(separator)
-                                .append(sdf.format(list.get(list.size() - 1))).append(separator)
-                                .append(sdf.format(timeWindow.getStart())).append(separator)
-                                .append(sdf.format(timeWindow.getEnd()));
+                        sb.append("key:"+key).append(separator)
+                                .append("窗口元素个数:"+list.size()).append(separator)
+                                .append("窗口内最早元素的时间:"+sdf.format(list.get(0))).append(separator)
+                                .append("窗口内最晚元素的时间:"+sdf.format(list.get(list.size() - 1))).append(separator)
+                                .append("窗口自身开始时间:"+sdf.format(timeWindow.getStart())).append(separator)
+                                .append("窗口自身结束时间:"+sdf.format(timeWindow.getEnd()));
                         String res = sb.toString();
                         //key，窗口内元素个数，窗口内最早元素的时间，窗口内最晚元素的时间，窗口自身开始时间，窗口自身结束时间
                         out.collect(res);

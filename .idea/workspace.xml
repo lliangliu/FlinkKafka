@@ -1,0 +1,1497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7f5c75f5-b313-4b49-a271-38a321a7dfe4" name="Default Changelist" comment="1.实现数据落地mysql hbase redis">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/redisDemo/RedisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/MysqlBacthSink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/StreamingWindowWaterMark2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/FlinkSql$$anon$2$$anon$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/FlinkSql$$anon$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/FlinkSql$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/FlinkSql$Person1$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/FlinkSql$Person1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/FlinkSql.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/JoinDoubleStream$$anon$4$$anon$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/JoinDoubleStream$$anon$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/JoinDoubleStream$$anon$5$$anon$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/JoinDoubleStream$$anon$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/JoinDoubleStream$$anon$6$$anon$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/JoinDoubleStream$$anon$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/JoinDoubleStream$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/JoinDoubleStream$InnerJoinFunction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/JoinDoubleStream$LeftJoinFunction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/JoinDoubleStream$RightJoinFunction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/JoinDoubleStream$StockSnapshot$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/JoinDoubleStream$StockSnapshot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/JoinDoubleStream$StockTransaction$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/JoinDoubleStream$StockTransaction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/JoinDoubleStream.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/SqlAPI$$anon$2$$anon$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/SqlAPI$$anon$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/SqlAPI$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkSqlDemo/SqlAPI.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkWatermark/StreamingWindowWatermarkScala$$anon$3$$anon$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkWatermark/StreamingWindowWatermarkScala$$anon$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkWatermark/StreamingWindowWatermarkScala$$anon$4$$anon$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkWatermark/StreamingWindowWatermarkScala$$anon$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkWatermark/StreamingWindowWatermarkScala$$anon$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkWatermark/StreamingWindowWatermarkScala$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FlinkWatermark/StreamingWindowWatermarkScala.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/KafkaToSinkStreaming$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/KafkaToSinkStreaming.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/redisDemo/FiveRedisType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/redisDemo/RedisTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/redisDemo/RedisUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/Utils/PropertyUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/flinkBroadCast/BatchDemoBroadcast$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/flinkBroadCast/BatchDemoBroadcast$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/flinkBroadCast/BatchDemoBroadcast.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/flinktohbase/FlinkHBase$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/flinktohbase/FlinkHBase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/flinktohbase/JProducer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/flinktomysqlAndhbase/DataToKafka.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/flinktomysqlAndhbase/Entity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/flinktomysqlAndhbase/FlinkSubmitter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/flinktomysqlAndhbase/HbaseSink.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/flinktomysqlAndhbase/KafkaCreateData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/flinktomysqlAndhbase/MysqlSink.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/flinktoredis/flinkKafkaWordCount$RedisExampleMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/flinktoredis/flinkKafkaWordCount$linesFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/flinktoredis/flinkKafkaWordCount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/kafka/FlinkWordCount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/kafka/createData/CreateDataToKafka.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/kafka/createData/DataToKafkaThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/windowWaterMark/StreamingWindowWatermark$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/windowWaterMark/StreamingWindowWatermark$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/windowWaterMark/StreamingWindowWatermark$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/windowWaterMark/StreamingWindowWatermark$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/windowWaterMark/StreamingWindowWatermark.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/windowWaterMark/WindowsTest$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/windowWaterMark/WindowsTest$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/windowWaterMark/WindowsTest$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/windowWaterMark/WindowsTest$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/test/windowWaterMark/WindowsTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinktohbaseAndMysql/HBaseSink$Student$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinktohbaseAndMysql/HBaseSink$Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinktohbaseAndMysql/HBaseSink.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinktohbaseAndMysql/MysqlSink$Student$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinktohbaseAndMysql/MysqlSink$Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinktohbaseAndMysql/MysqlSink.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinkwordcount/Demo$$anon$2$$anon$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinkwordcount/Demo$$anon$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinkwordcount/Demo$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinkwordcount/Demo$Record2TimestampExtractor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinkwordcount/Demo$UserRecord$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinkwordcount/Demo$UserRecord.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinkwordcount/Demo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinkwordcount/FlinkKafkaSql$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinkwordcount/FlinkKafkaSql.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinkwordcount/SocketWindowWordCount$$anon$2$$anon$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinkwordcount/SocketWindowWordCount$$anon$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinkwordcount/SocketWindowWordCount$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/flinkwordcount/SocketWindowWordCount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/flink/window/FlinkHdfs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/flink/window/GruopWc$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/flink/window/GruopWc$WordWithCount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/flink/window/GruopWc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/flink/window/windowsTest$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/flink/window/windowsTest$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/flink/window/windowsTest$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/flink/window/windowsTest$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/flink/window/windowsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/FlinkSubmitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/FlinkSubmitter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/MysqlSink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/MysqlSink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/GruopWC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/GruopWC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/StreamingWindowWatermark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/StreamingWindowWatermark.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/WindowsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/GruopWC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1994#1995#0" expanded="true" />
+                <element signature="e#2053#2054#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/MysqlSink.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="41" column="91" selection-start-line="41" selection-start-column="91" selection-end-line="41" selection-end-column="91" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/flinkBroadCast/BatchDemoBroadcast.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="491">
+              <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/StreamingWindowWatermark.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="110" column="61" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/StreamingWindowWaterMark2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="95" column="33" lean-forward="true" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/kafka/FlinkWordCount.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="605">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/flinktoredis/flinkKafkaWordCount.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-250">
+              <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/FlinkSubmitter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-190">
+              <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/MysqlBacthSink.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="30" column="91" selection-start-line="30" selection-start-column="91" selection-end-line="30" selection-end-column="91" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flink/MysqlSink.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flink/FlinkSubmitter.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/flinktoHbaseAndMysql/HBaseSink.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktoHbaseAndMysql/KafkaToSinkStreaming.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/flinktoHbaseAndMysql/KafkaToSinkStreaming.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktohbase/MysqlSink.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktohbase/HBaseSink.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktohbase/KafkaToSinkStreaming.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/flinktohbase/KafkaToSinkStreaming.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktohbase/JProducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktomysql/MysqlSink.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktomysql/FlinkSubmitter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktomysql/HbaseSink.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/DataToKafka.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/DataToKafkaThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/Utils/PropertyUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/kafka/createData/DataToKafkaThread.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/flinkwordcount/SocketWindowWordCount.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/flinktohbaseAndMysql/KafkaToSinkStreaming.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktohbase/FlinkHBase.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/FlinkSqlDemo/JoinDemo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/FlinkSqlDemo/FlinkSql.scala" />
+        <option value="$PROJECT_DIR$/src/test/java/com/flink/window/windowsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/flink/window/GruopWc.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/FlinkSqlDemo/SqlAPI.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/flinkwordcount/FlinkKafkaSql.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/flinkwordcount/Demo.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/FlinkWatermark/StreamingWindowWatermarkScala.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/StreamingWindowWatermark.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinkBroadCast/BatchDemoBroadcast.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/WindowsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/kafka/FlinkWordCount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/Entity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/KafkaCreateData.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/HbaseSink.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/redisDemo/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/redisDemo/FiveRedisType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/kafka/createData/CreateDataToKafka.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/redisDemo/RedisTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktoredis/flinkKafkaWordCount.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/flink/window/FlinkHdfs.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/FlinkSqlDemo/JoinDoubleStream.scala" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/StreamingWindowWatermark.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/MysqlBacthSink.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/FlinkSubmitter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/MysqlSink.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/GruopWC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/StreamingWindowWaterMark2.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Flink-Kafka" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Flink-Kafka" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Flink-Kafka" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-72" />
+    <option name="y" value="54" />
+    <option name="width" value="1748" />
+    <option name="height" value="985" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="redisDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="flinkBroadCast" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="flinktohbase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="flinktomysqlAndhbase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="flinktoredis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+              <item name="createData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="windowWaterMark" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="FlinkSqlDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="flinktohbaseAndMysql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="FlinkWatermark" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="flinkwordcount" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="flink" type="462c0819:PsiDirectoryNode" />
+              <item name="window" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FlinkKafka" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FlinkKafka" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../flink-1.8.0/lib/log4j-1.2.17.jar!/" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.45588234" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\myprogram\IdeaProject\FlinkKafka\src\main\java\com\test\flinktohbase" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.test.flinktoredis" />
+      <recent name="FlinkSqlDemo" />
+      <recent name="com.test.Utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\myprogram\IdeaProject\FlinkKafka\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.StreamingWindowWaterMark2">
+    <configuration name="FlinkSubmitter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.flinktomysqlAndhbase.FlinkSubmitter" />
+      <module name="FlinkKafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.flinktomysqlAndhbase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GruopWC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.windowWaterMark.GruopWC" />
+      <module name="FlinkKafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.windowWaterMark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaCreateData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.flinktomysqlAndhbase.KafkaCreateData" />
+      <module name="FlinkKafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.flinktomysqlAndhbase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamingWindowWaterMark2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.windowWaterMark.StreamingWindowWaterMark2" />
+      <module name="FlinkKafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.windowWaterMark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamingWindowWatermark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.windowWaterMark.StreamingWindowWatermark" />
+      <module name="FlinkKafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.windowWaterMark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StreamingWindowWaterMark2" />
+        <item itemvalue="Application.GruopWC" />
+        <item itemvalue="Application.FlinkSubmitter" />
+        <item itemvalue="Application.KafkaCreateData" />
+        <item itemvalue="Application.StreamingWindowWatermark" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f5c75f5-b313-4b49-a271-38a321a7dfe4" name="Default Changelist" comment="" />
+      <created>1563765057500</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563765057500</updated>
+      <workItem from="1563765060062" duration="1992000" />
+      <workItem from="1563773965296" duration="10284000" />
+      <workItem from="1563844093032" duration="5814000" />
+      <workItem from="1563862206847" duration="12904000" />
+      <workItem from="1563875495387" duration="1406000" />
+      <workItem from="1563876939501" duration="119000" />
+      <workItem from="1563931433885" duration="2736000" />
+      <workItem from="1563948551946" duration="190000" />
+      <workItem from="1564384039586" duration="120000" />
+      <workItem from="1564480938204" duration="650000" />
+      <workItem from="1565600675874" duration="118000" />
+      <workItem from="1565835031467" duration="14143000" />
+      <workItem from="1566181107414" duration="18000" />
+      <workItem from="1566197944559" duration="4748000" />
+      <workItem from="1566287876264" duration="145000" />
+      <workItem from="1566288695858" duration="5463000" />
+      <workItem from="1566349059827" duration="19498000" />
+      <workItem from="1566436420401" duration="697000" />
+      <workItem from="1566444068820" duration="1832000" />
+      <workItem from="1566466366378" duration="608000" />
+      <workItem from="1566521599502" duration="260000" />
+      <workItem from="1567070207812" duration="1614000" />
+      <workItem from="1567144510594" duration="10605000" />
+      <workItem from="1567386444103" duration="17684000" />
+      <workItem from="1567472211195" duration="6996000" />
+      <workItem from="1567493517070" duration="429000" />
+      <workItem from="1567576909787" duration="5948000" />
+      <workItem from="1567645343357" duration="5825000" />
+      <workItem from="1567654441527" duration="2689000" />
+      <workItem from="1567677454173" duration="418000" />
+      <workItem from="1568008290445" duration="4545000" />
+      <workItem from="1568092473180" duration="2432000" />
+      <workItem from="1568110186799" duration="242000" />
+      <workItem from="1568110530290" duration="45000" />
+      <workItem from="1568163940289" duration="9621000" />
+      <workItem from="1568250076303" duration="4742000" />
+      <workItem from="1568797802825" duration="1036000" />
+      <workItem from="1568880567666" duration="3442000" />
+      <workItem from="1568940952387" duration="48000" />
+      <workItem from="1568942268249" duration="861000" />
+      <workItem from="1568945574387" duration="4182000" />
+      <workItem from="1569396073616" duration="5773000" />
+      <workItem from="1569406645484" duration="3000" />
+      <workItem from="1569459579307" duration="19979000" />
+    </task>
+    <task id="LOCAL-00001" summary="flink watermark使用案例">
+      <created>1567144950895</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567144950895</updated>
+    </task>
+    <task id="LOCAL-00002" summary="flink watermark2使用案例">
+      <created>1567158389604</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567158389604</updated>
+    </task>
+    <task id="LOCAL-00003" summary="flink 广播变量的案例">
+      <created>1567401623928</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567401623928</updated>
+    </task>
+    <task id="LOCAL-00004" summary="求五秒钟内每个班级最高的分数&#10;求十秒钟最大值">
+      <created>1567412504796</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1567412504796</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1.增加redis 五种操作类型&#10;2.制造kafka数据,分析flink的处理速度">
+      <created>1567653784221</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1567653784221</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1.优化配置信息">
+      <created>1568010266850</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1568010266850</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1.改善代码">
+      <created>1568013541093</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1568013541093</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1.改善代码">
+      <created>1568013868947</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1568013868947</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1.实现数据落地mysql hbase redis">
+      <created>1568253153007</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1568253153007</updated>
+    </task>
+    <task id="LOCAL-00010" summary="双流join稍微改动">
+      <created>1569404696056</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1569404696056</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="FlinkHdfs_run1 - 2019.09.25 at 15h 27m 00s.xml">
+      <configuration name="FlinkHdfs.run1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlinkHdfs_run1 - 2019.09.25 at 15h 27m 14s.xml">
+      <configuration name="FlinkHdfs.run1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlinkHdfs - 2019.09.25 at 15h 27m 32s.xml">
+      <configuration name="FlinkHdfs" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlinkHdfs_run1 - 2019.09.25 at 15h 27m 45s.xml">
+      <configuration name="FlinkHdfs.run1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlinkHdfs_run1 - 2019.09.25 at 15h 27m 59s.xml">
+      <configuration name="FlinkHdfs.run1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlinkHdfs_run1 - 2019.09.25 at 15h 28m 22s.xml">
+      <configuration name="FlinkHdfs.run1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlinkHdfs_run1 - 2019.09.25 at 15h 31m 24s.xml">
+      <configuration name="FlinkHdfs.run1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlinkHdfs_run1 - 2019.09.25 at 15h 31m 39s.xml">
+      <configuration name="FlinkHdfs.run1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlinkHdfs_run1 - 2019.09.25 at 15h 31m 48s.xml">
+      <configuration name="FlinkHdfs.run1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FlinkHdfs_run1 - 2019.09.25 at 15h 32m 14s.xml">
+      <configuration name="FlinkHdfs.run1" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="192904000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17750533" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4991233" visible="true" weight="0.053145338" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4556213" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32951945" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.24559341" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32902467" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.43125734" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50087667" side_tool="true" weight="0.4416476" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.3296318" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="SciView" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22630332" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4991233" visible="true" weight="0.6909518" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4556213" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32951945" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32951945" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32951945" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.43125734" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50087667" side_tool="true" weight="0.4416476" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.3296318" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="SciView" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="flink watermark使用案例" />
+    <MESSAGE value="flink watermark2使用案例" />
+    <MESSAGE value="flink 广播变量的案例" />
+    <MESSAGE value="求五秒钟内每个班级最高的分数&#10;求十秒钟最大值" />
+    <MESSAGE value="1.增加redis 五种操作类型&#10;2.制造kafka数据,分析flink的处理速度" />
+    <MESSAGE value="1.优化配置信息" />
+    <MESSAGE value="1.改善代码" />
+    <MESSAGE value="1.实现数据落地mysql hbase redis" />
+    <MESSAGE value="双流join稍微改动" />
+    <option name="LAST_COMMIT_MESSAGE" value="双流join稍微改动" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-client/1.4.3/hbase-client-1.4.3-sources.jar!/org/apache/hadoop/hbase/client/Table.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="226" column="7" selection-start-line="226" selection-start-column="7" selection-end-line="226" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../java/jdk/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.7.0/flink-core-1.7.0.jar!/org/apache/flink/api/common/serialization/SimpleStringSchema.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/flinktohbaseAndMysql/HBaseSink.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding>
+            <element signature="e#30#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-scala_2.12/1.7.0/flink-streaming-scala_2.12-1.7.0.jar!/org/apache/flink/streaming/api/scala/DataStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="97" column="6" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/flinktohbaseAndMysql/MysqlSink.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../flink-1.7.0-bin-hadoop27-scala_2.12/flink-1.7.0-bin-hadoop27-scala_2.12/flink-1.7.0/lib/flink-dist_2.12-1.7.0.jar!/org/apache/flink/api/java/functions/KeySelector.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.7.0/flink-core-1.7.0.jar!/org/apache/flink/api/common/functions/MapFunction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-core/1.7.0/flink-core-1.7.0-sources.jar!/org/apache/flink/api/common/functions/MapFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="43" column="30" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.12/1.7.0/flink-streaming-java_2.12-1.7.0.jar!/org/apache/flink/streaming/api/watermark/Watermark.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#549#550#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/Utils/PropertyUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/flinktohbaseAndMysql/KafkaToSinkStreaming.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/flinkwordcount/Demo.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+          <folding>
+            <element signature="e#24#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/1.0.1/kafka-clients-1.0.1.jar!/org/apache/kafka/clients/producer/ProducerRecord.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="52" column="11" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/1.0.1/kafka-clients-1.0.1-sources.jar!/org/apache/kafka/clients/producer/ProducerRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="221" column="19" selection-start-line="221" selection-start-column="19" selection-end-line="221" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../flink-1.7.0-bin-hadoop27-scala_2.12/flink-1.7.0-bin-hadoop27-scala_2.12/flink-1.7.0/lib/flink-dist_2.12-1.7.0.jar!/org/apache/flink/streaming/api/environment/StreamExecutionEnvironment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="84" column="38" selection-start-line="84" selection-start-column="4" selection-end-line="84" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../java/jdk/src.zip!/java/sql/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="241" column="9" selection-start-line="239" selection-start-column="26" selection-end-line="241" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/flinktohbase/JProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/kafka/createData/DataToKafkaThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/DataToKafka.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/kafka/createData/CreateDataToKafka.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="45" column="15" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/flink/window/windowsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/redisDemo/FiveRedisType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/redisDemo/RedisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/flinktohbase/FlinkHBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="65" column="50" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/redisDemo/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FlinkSqlDemo/FlinkSql.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding>
+            <element signature="e#22#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FlinkSqlDemo/JoinDoubleStream.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+          <folding>
+            <element signature="e#22#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FlinkSqlDemo/SqlAPI.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#23#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/FlinkWatermark/StreamingWindowWatermarkScala.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="62" column="57" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="57" />
+          <folding>
+            <element signature="e#26#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/flinkwordcount/SocketWindowWordCount.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding>
+            <element signature="e#24#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/flinkwordcount/FlinkKafkaSql.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="e#24#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/flink/window/FlinkHdfs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" column="46" selection-start-line="18" selection-start-column="70" selection-end-line="19" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/flink/window/GruopWc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/HbaseSink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="44" column="41" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="59" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/KafkaCreateData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/FlinkSubmitter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/MysqlBacthSink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="30" column="91" selection-start-line="30" selection-start-column="91" selection-end-line="30" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/flinktomysqlAndhbase/MysqlSink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="41" column="91" selection-start-line="41" selection-start-column="91" selection-end-line="41" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/flinkBroadCast/BatchDemoBroadcast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/kafka/FlinkWordCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/flinktoredis/flinkKafkaWordCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-250">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/WindowsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../flink-1.7.0-bin-hadoop27-scala_2.12/flink-1.7.0-bin-hadoop27-scala_2.12/flink-1.7.0/lib/flink-dist_2.12-1.7.0.jar!/org/apache/flink/streaming/api/datastream/KeyedStream.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="57" column="53" selection-start-line="57" selection-start-column="53" selection-end-line="57" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/GruopWC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1994#1995#0" expanded="true" />
+            <element signature="e#2053#2054#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/StreamingWindowWatermark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="110" column="61" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/windowWaterMark/StreamingWindowWaterMark2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="95" column="33" lean-forward="true" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.45588234" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.45588234" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.12.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.45588234" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.45588234" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>FlinkKafka</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.45588234" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.101tec:zkclient:0.10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.45588234" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

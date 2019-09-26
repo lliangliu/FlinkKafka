@@ -38,8 +38,8 @@ public class MysqlSink extends RichSinkFunction<Entity> {
         //System.out.println("url:"+url+",username:"+username+",password:"+password);
         //创建连接
         connection = DriverManager.getConnection(url,username,password);
-        connection.setAutoCommit(false);
-        String sql = "insert into web_access (city,loginTime,os,phoneName) values (?,?,?,?);";
+        //connection.setAutoCommit(false);
+        String sql = "insert into web_access (city,loginTime,os,phoneName) values (?,?,?,?)";
         ps = connection.prepareStatement(sql);
     }
 
@@ -55,10 +55,10 @@ public class MysqlSink extends RichSinkFunction<Entity> {
             ps.setString(3,value.os);
             ps.setString(4,value.phoneName);
             System.out.println("insert into web_access (city,loginTime,os,phoneName values ("+value.city+","+value.loginTime+","+value.os+","+value.phoneName);
-            ps.addBatch();
-            ps.executeBatch();
-            //ps.executeUpdate();
-            connection.commit();
+            //ps.addBatch();
+            //ps.executeBatch();
+            ps.executeUpdate();
+            //connection.commit();
         }
 
     @Override
